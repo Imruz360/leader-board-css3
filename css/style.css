@@ -161,3 +161,48 @@ p.course-author {
 .single-course img {
     width: 100%;
 }
+
+/* Responsive css */
+
+/* mobile devices  */
+@media only screen and (max-width:688px) {
+
+    body {
+        overflow: hidden !important;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+
+    .single-course {
+        margin-bottom: 16px;
+    }
+}
+
+/* Tablet devices  */
+
+@media screen and (max-width: 991px) and (min-width: 689px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
